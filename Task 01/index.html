@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Image Gallery</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Image Gallery</h1>
+  <p>Click any photo to open it. Use the arrow keys or buttons to browse.</p>
+</header>
+
+<div class="filters" id="filters"></div>
+<main class="gallery" id="gallery"></main>
+
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <button class="lb-btn lb-close" id="lbClose" aria-label="Close">&times;</button>
+  <button class="lb-btn lb-prev" id="lbPrev" aria-label="Previous image">&#10094;</button>
+  <img id="lbImg" alt="">
+  <button class="lb-btn lb-next" id="lbNext" aria-label="Next image">&#10095;</button>
+  <div class="lb-info"><span id="lbTitle"></span><small id="lbCount"></small></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
